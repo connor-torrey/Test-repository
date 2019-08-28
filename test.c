@@ -7,5 +7,6 @@ int main(void)
 	if(one = 1)
 	{
 		two = 4;
+		three = 3;
 	}
 }	
