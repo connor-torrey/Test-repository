@@ -1,0 +1,4 @@
+VAR
+	Start : BOOL;
+	Begin : INT;
+END_VAR

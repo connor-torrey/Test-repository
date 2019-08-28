@@ -62,6 +62,12 @@
         <IndexMap>
           <Index ID="93943" Value="0"/>
           <Index ID="95424" Value="1"/>
+        </TextLayer>
+        <TextLayer LanguageId="de">
+          <Text ID="93943" Value="Zur Verwendung der Fortschrittsanzeige einen Variable an Datapoint anhängen und StartValue und EndValue entsprechend einstellen."/>
+        </TextLayer>
+        <IndexMap>
+          <Index ID="93943" Value="0"/>
         </IndexMap>
       </TextGroup>
       <Controls>
