@@ -4,7 +4,10 @@
   <TaskClass Name="Cyclic#1" />
   <TaskClass Name="Cyclic#2" />
   <TaskClass Name="Cyclic#3" />
-  <TaskClass Name="Cyclic#4" />
+  <TaskClass Name="Cyclic#4">
+    <Task Name="NewProgram" Source="NewProgram.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="LoveLD" Source="LoveLD.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+  </TaskClass>
   <VcDataObjects>
     <VcDataObject Name="Visu" Source="Visu.dob" Memory="UserROM" Language="Vc" WarningLevel="2" Compress="false" />
   </VcDataObjects>
