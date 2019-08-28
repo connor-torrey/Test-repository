@@ -3,10 +3,10 @@
 int main(void)
 {
 	int one, two, three;
-	
+
 	if(one = 1)
 	{
 		two = 4;
-		three = 3;
+		two + three = 5
 	}
-}	
+}
