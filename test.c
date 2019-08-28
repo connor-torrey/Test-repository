@@ -8,5 +8,6 @@ int main(void)
 	{
 		two = 4;
 		two + three = 5
+		one + one = 2
 	}
 }	
