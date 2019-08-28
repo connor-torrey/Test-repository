@@ -6,6 +6,6 @@ int main(void)
 	
 	if(one = 1)
 	{
-		two = 2;
+		two = 4;
 	}
 }	
