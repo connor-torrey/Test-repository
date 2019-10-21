@@ -21,7 +21,6 @@ port_number = 0
 j1939_source_address = 1
 whitelist = []
 last_excel_import_export_filename = ''
-j1939_name = 'FFFFFFFFFFFFFFFF'
 
 <childs fullname="/project/IOCORE_msg/CAN_interface">
 

@@ -11,7 +11,6 @@ historyLog = 'enter history log here'
 debug_PC_SA = 128
 debug_PC_NetName = '250'
 debug_CAN_line = u'CAN_line'
-debug_PC_NetHardware = 'PCAN-USB'
 customer_id = [u'A744', u'A644', u'', u'']
 access_level = [100, 100, 0, 0]
 alarm_repetitions = [('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', ''), ('', '')]
