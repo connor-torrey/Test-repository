@@ -1,5 +1,0 @@
-VAR
-	gdo : do_type; (*process variable for do type*)
-	gExecute : BOOL;
-	gdi : di_type; (*process variable for di type*)
-END_VAR
