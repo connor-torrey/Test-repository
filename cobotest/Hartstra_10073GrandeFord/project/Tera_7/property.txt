@@ -3476,20 +3476,20 @@ count = 0
     testVar234 = 1;
     testVar123 = 2;
 
-    
+
     if (parametersCode != 1234) // --> BE SURE THAT THIS CODE IS EQUAL TO parametersCode INIT VALUE!!!
     {
         INIT_BYTEARRAY_P__call();
         INIT_BYTEARRAY_R__call();
         REBOOT__call();
-    } 
+    }
 
     if (SaveP)
     {
         SaveP = FALSE;
         (void)save_bytearray_P();
     }
-    
+
     if (SaveR)
     {
         SaveR = FALSE;
@@ -3548,21 +3548,21 @@ count = 0
     {
         kennel1Temp_C = (int)interpol(IO_kennel1Temp, 250.0, 4750.0, -50.0, 150.0);
     }
-/*Kennel 1 Temp in Farenheit*/    
+/*Kennel 1 Temp in Farenheit*/
     kennel1Temp_F =        (int)(((float)(kennel1Temp_C) * 1.8) + 32.0);
- 
-/*Assign Kennel 1 Temp to Varaible for Evaluation*/   
+
+/*Assign Kennel 1 Temp to Varaible for Evaluation*/
     if (p_Units == 0)
     {
-      kennel1Temp = kennel1Temp_F;  
+      kennel1Temp = kennel1Temp_F;
     }
     else
     {
-      kennel1Temp = kennel1Temp_C;   
+      kennel1Temp = kennel1Temp_C;
     }
-    
+
 /*Kennel 2 Temp in Celius*/
-	if (IO_kennel2Temp < 250) 
+	if (IO_kennel2Temp < 250)
     {
         kennel2Temp_C = -50;
     }
@@ -3574,18 +3574,18 @@ count = 0
     {
         kennel2Temp_C = (int)interpol(IO_kennel2Temp, 250.0, 4750.0, -50.0, 150.0);
     }
-    
-/*Kennel 2 Temp in Farenheit*/    
+
+/*Kennel 2 Temp in Farenheit*/
     kennel2Temp_F =        (int)(((float)(kennel2Temp_C) * 1.8) + 32.0);
- 
-/*Assign Kennel 1 Temp to Varaible for Evaluation*/   
+
+/*Assign Kennel 1 Temp to Varaible for Evaluation*/
     if (p_Units == 0)
     {
-      kennel2Temp = kennel2Temp_F;  
+      kennel2Temp = kennel2Temp_F;
     }
     else
     {
-      kennel2Temp = kennel2Temp_C;   
+      kennel2Temp = kennel2Temp_C;
     }
 
 /*Kennel 3 Temp in Celcius*/
@@ -3601,19 +3601,19 @@ count = 0
     {
         kennel3Temp_C = (int)interpol(IO_kennel3Temp, 250.0, 4750.0, -50.0, 150.0);
     }
- 
-/*Kennel 3 Temp in Farenheit*/    
+
+/*Kennel 3 Temp in Farenheit*/
     kennel3Temp_F =        (int)(((float)(kennel3Temp_C) * 1.8) + 32.0);
- 
-/*Assign Kennel 3 Temp to Varaible for Evaluation*/   
+
+/*Assign Kennel 3 Temp to Varaible for Evaluation*/
     if (p_Units == 0)
     {
-      kennel3Temp = kennel3Temp_F;  
+      kennel3Temp = kennel3Temp_F;
     }
     else
     {
-      kennel3Temp = kennel3Temp_C;   
-    }   
+      kennel3Temp = kennel3Temp_C;
+    }
 /*Kennel 4 Temp in Celcius*/
 	if (IO_kennel4Temp < 250)
     {
@@ -3628,18 +3628,18 @@ count = 0
         kennel4Temp_C = (int)interpol(IO_kennel4Temp, 250.0, 4750.0, -50.0, 150.0);
     }
 
-/*Kennel 4 Temp in Farenheit*/    
+/*Kennel 4 Temp in Farenheit*/
     kennel4Temp_F =        (int)(((float)(kennel4Temp_C) * 1.8) + 32.0);
- 
-/*Assign Kennel 4 Temp to Varaible for Evaluation*/   
+
+/*Assign Kennel 4 Temp to Varaible for Evaluation*/
     if (p_Units == 0)
     {
-      kennel4Temp = kennel4Temp_F;  
+      kennel4Temp = kennel4Temp_F;
     }
     else
     {
-      kennel4Temp = kennel4Temp_C;   
-    }    
+      kennel4Temp = kennel4Temp_C;
+    }
 
 /*Kennel 5 Temp in Celcius*/
 	if (IO_kennel5Temp < 250)
@@ -3655,19 +3655,19 @@ count = 0
         kennel5Temp_C = (int)interpol(IO_kennel5Temp, 250.0, 4750.0, -50.0, 150.0);
     }
 
-/*Kennel 5 Temp in Farenheit*/    
+/*Kennel 5 Temp in Farenheit*/
     kennel5Temp_F =        (int)(((float)(kennel5Temp_C) * 1.8) + 32.0);
- 
-/*Assign Kennel 5 Temp to Varaible for Evaluation*/   
+
+/*Assign Kennel 5 Temp to Varaible for Evaluation*/
     if (p_Units == 0)
     {
-      kennel5Temp = kennel5Temp_F;  
+      kennel5Temp = kennel5Temp_F;
     }
     else
     {
-      kennel5Temp = kennel5Temp_C;   
-    }  
-  
+      kennel5Temp = kennel5Temp_C;
+    }
+
 /*Kennel 6 Temp in Celcius*/
 	if (IO_kennel6Temp < 250)
     {
@@ -3682,19 +3682,19 @@ count = 0
         kennel6Temp_C = (int)interpol(IO_kennel6Temp, 250.0, 4750.0, -50.0, 150.0);
     }
 
-/*Kennel 6 Temp in Farenheit*/    
+/*Kennel 6 Temp in Farenheit*/
     kennel6Temp_F =        (int)(((float)(kennel6Temp_C) * 1.8) + 32.0);
- 
-/*Assign Kennel 6 Temp to Varaible for Evaluation*/   
+
+/*Assign Kennel 6 Temp to Varaible for Evaluation*/
     if (p_Units == 0)
     {
-      kennel6Temp = kennel6Temp_F;  
+      kennel6Temp = kennel6Temp_F;
     }
     else
     {
-      kennel6Temp = kennel6Temp_C;   
+      kennel6Temp = kennel6Temp_C;
     }
-    
+
 /*Kennel 7 Temp in Celcius*/
 	if (IO_kennel7Temp < 250)
     {
@@ -3709,19 +3709,19 @@ count = 0
         kennel7Temp_C = (int)interpol(IO_kennel7Temp, 250.0, 4750.0, -50.0, 150.0);
     }
 
-/*Kennel 7 Temp in Farenheit*/    
+/*Kennel 7 Temp in Farenheit*/
     kennel7Temp_F =        (int)(((float)(kennel7Temp_C) * 1.8) + 32.0);
- 
-/*Assign Kennel 7 Temp to Varaible for Evaluation*/   
+
+/*Assign Kennel 7 Temp to Varaible for Evaluation*/
     if (p_Units == 0)
     {
-      kennel7Temp = kennel7Temp_F;  
+      kennel7Temp = kennel7Temp_F;
     }
     else
     {
-      kennel7Temp = kennel7Temp_C;   
+      kennel7Temp = kennel7Temp_C;
     }
-    
+
 /*Kennel 8 Temp in Celcius*/
 	if (IO_kennel8Temp < 250)
     {
@@ -3735,17 +3735,17 @@ count = 0
     {
         kennel8Temp_C = (int)interpol(IO_kennel8Temp, 250.0, 4750.0, -50.0, 150.0);
     }
-/*Kennel 8 Temp in Farenheit*/    
+/*Kennel 8 Temp in Farenheit*/
     kennel8Temp_F =        (int)(((float)(kennel8Temp_C) * 1.8) + 32.0);
- 
-/*Assign Kennel 8 Temp to Varaible for Evaluation*/   
+
+/*Assign Kennel 8 Temp to Varaible for Evaluation*/
     if (p_Units == 0)
     {
-      kennel8Temp = kennel8Temp_F;  
+      kennel8Temp = kennel8Temp_F;
     }
     else
     {
-      kennel8Temp = kennel8Temp_C;   
+      kennel8Temp = kennel8Temp_C;
     }
 
 
@@ -3800,12 +3800,12 @@ count = 0
 <body fullname="/project/Tera_7/Programs/PLC_PRG_POUs/usbUpdate">
 
 
-    
+
     if (updateEnable)
     {
         static bool f = FALSE;
         unsigned int ack = 0;
-        
+
         if (rebootThenUpdate == 1)
         {
             rebootThenUpdate = 0;
@@ -3816,13 +3816,13 @@ count = 0
                     if ( vt3_update_req() == 0 )
                     {
                         // the request is sending, the application will be killed and the
-                        // update starts if the USB key is inserted 
+                        // update starts if the USB key is inserted
                         f = TRUE;
                     }
                 }
             }
         }
-        
+
         if (updateRequested)
         {
             if (!f)
@@ -3830,12 +3830,12 @@ count = 0
                 if ( vt3_update_req() == 0 )
                 {
                     // the request is sending, the application will be killed and the
-                    // update starts if the USB key is inserted 
+                    // update starts if the USB key is inserted
                     f = TRUE;
                 }
             }
         }
-        
+
         if ((vt3_update_get_ack(&ack) == 0) && ack)
         {
             /* if the code arrives here some problems on the TERA update occurs. */
@@ -3850,7 +3850,7 @@ count = 0
             }
         }
     }
-    
+
 
 
 </body fullname="/project/Tera_7/Programs/PLC_PRG_POUs/usbUpdate">
@@ -3884,22 +3884,22 @@ if ((StartUpTimer < 20000) &&
     {
     StartUpTimer = 0;
     }
-    
-    
+
+
 /*AC AUTO Logic*/
     if ((SystemOn == 1) &&
         (AutoMan == 0) &&
-        ((kennel1Temp > (p_ACSetPoint + p_ACDeadband)) || 
+        ((kennel1Temp > (p_ACSetPoint + p_ACDeadband)) ||
         (kennel2Temp > (p_ACSetPoint + p_ACDeadband)) ||
         (kennel3Temp > (p_ACSetPoint + p_ACDeadband)) ||
         (kennel4Temp > (p_ACSetPoint + p_ACDeadband)) ||
         (kennel5Temp > (p_ACSetPoint + p_ACDeadband)) ||
         (kennel6Temp > (p_ACSetPoint + p_ACDeadband)) ||
         (kennel7Temp > (p_ACSetPoint + p_ACDeadband)) ||
-        (kennel8Temp > (p_ACSetPoint + p_ACDeadband)))) 
+        (kennel8Temp > (p_ACSetPoint + p_ACDeadband))))
         {
-        AcOnAuto = 1;    
-        }   
+        AcOnAuto = 1;
+        }
     else if
         ((SystemOn == 0) ||
         (AutoMan == 1) ||
@@ -3912,37 +3912,37 @@ if ((StartUpTimer < 20000) &&
         (kennel7Temp < (p_ACSetPoint - p_ACDeadband)) &&
         (kennel8Temp < (p_ACSetPoint - p_ACDeadband))))
         {
-        AcOnAuto = 0;    
+        AcOnAuto = 0;
         }
 
 /*AC Output Logic */
-    if (((AcOnAuto) ||    
+    if (((AcOnAuto) ||
         (AcOnMan)) &&
         (IO_Heat == 0))
         {
         IO_AC = 1;
         buttonF4_bitmap = 1;
         }
-    else 
+    else
         {
         IO_AC = 0;
          buttonF4_bitmap = 0;
         }
-        
+
 /*Heat AUTO Logic*/
     if ((SystemOn == 1) &&
         (AutoMan == 0) &&
-        (((kennel1Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel1Temp > -50)) || 
+        (((kennel1Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel1Temp > -50)) ||
         ((kennel2Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel2Temp > -50)) ||
         ((kennel3Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel3Temp > -50))||
         ((kennel4Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel4Temp > -50))||
         ((kennel5Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel5Temp > -50)) ||
         ((kennel6Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel6Temp > -50)) ||
         ((kennel7Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel7Temp > -50)) ||
-        ((kennel8Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel8Temp > -50)))) 
+        ((kennel8Temp < (p_HeatSetPoint - p_HeatDeadband)) && (kennel8Temp > -50))))
         {
-        HeatOnAuto = 1;    
-        }   
+        HeatOnAuto = 1;
+        }
     else if
         ((SystemOn == 0) ||
         (AutoMan == 1) ||
@@ -3955,51 +3955,51 @@ if ((StartUpTimer < 20000) &&
         (kennel7Temp > (p_HeatSetPoint + p_HeatDeadband)) &&
         (kennel8Temp > (p_HeatSetPoint + p_HeatDeadband))))
         {
-        HeatOnAuto = 0;    
+        HeatOnAuto = 0;
         }
-    
+
     /*Heat Output Logic */
-    if (((HeatOnAuto) ||    
+    if (((HeatOnAuto) ||
         (HeatOnMan)) &&
         (IO_AC == 0))
         {
         IO_Heat = 1;
          buttonF5_bitmap = 1;
         }
-    else 
+    else
         {
         IO_Heat = 0;
          buttonF5_bitmap = 0;
         }
 
 /*Fan AUTO Logic*/
-	if (((SystemOn == 1) && 
+	if (((SystemOn == 1) &&
         (AutoMan == 0)) ||
-        ((SystemOn == 1) && 
+        ((SystemOn == 1) &&
         (AutoMan == 1) &&
         (FanOnMan == 1))) //||
-        //((SystemOn == 1) && 
+        //((SystemOn == 1) &&
         //(AutoMan == 1) &&
         //(AcOnMan == 1)) ||
-        //((SystemOn == 1) && 
+        //((SystemOn == 1) &&
         //(AutoMan == 1) &&
         //(HeatOnMan == 1)))
         {
-        FanOnAuto = 1; 
+        FanOnAuto = 1;
         }
     else
         {
-        FanOnAuto = 0;     
+        FanOnAuto = 0;
         }
 
 /*Fan Output Logic */
-    if ((FanOnAuto) ||    
+    if ((FanOnAuto) ||
         (FanOnMan))
         {
         IO_Fan = 1;
          buttonF3_bitmap = 1;
         }
-    else 
+    else
         {
         IO_Fan = 0;
          buttonF3_bitmap = 0;
@@ -4016,7 +4016,7 @@ if ((StartUpTimer < 20000) &&
         IO_InteriorLight = 0;
          buttonF6_bitmap = 0;
         }
-        
+
 /*Side Lights Output Logic
     if (SideLightsOn == 1)
         {
@@ -4050,7 +4050,7 @@ if ((StartUpTimer < 20000) &&
         {
         IO_StrobeLight = 0;
          buttonF9_bitmap = 0;
-        }  
+        }
 
 /*Strobe Pattern Pulse Output Logic*/
     if (StrobePatternPulse == 1)
@@ -4062,7 +4062,7 @@ if ((StartUpTimer < 20000) &&
         {
         IO_StrobePattern = 0;
          buttonF10_bitmap = 0;
-        }  
+        }
 
 /*System On Button Indicator */
     if (SystemOn == TRUE)
@@ -4073,7 +4073,7 @@ if ((StartUpTimer < 20000) &&
         {
         buttonF1_bitmap = 0;
         }
-        
+
 /*Auto MANUAL Button Indicator */
     if (AutoMan == 1)
         {
@@ -4082,7 +4082,7 @@ if ((StartUpTimer < 20000) &&
         }
     else
         {
-        buttonF2_bitmap = 4; 
+        buttonF2_bitmap = 4;
         buttonF2_text = 1;
         }
 /*Buzzer Logic*/
@@ -4105,9 +4105,9 @@ if ((StartUpTimer < 20000) &&
          BuzzerTera = 0;
          AlarmMessage = 0;
         }
-   
-    
-    
+
+
+
 
 
 
@@ -4137,9 +4137,9 @@ count = 0
 <body fullname="/project/Tera_7/Programs/task100">
 
 
-    
+
     slaveConfig__call();
-            
+
 
 
 </body fullname="/project/Tera_7/Programs/task100">
@@ -4195,7 +4195,7 @@ winscope_access_write = ''
 <body fullname="/project/Tera_7/Programs/task100_POUs/slaveConfig">
 
 
-    
+
     slaveConfigFB_CPU0__call();
     if (vt3_configure_slave_IO_CORE_CPU0.progress == 100)
     {
@@ -4217,7 +4217,7 @@ winscope_access_write = ''
             vt3_can_send_sync_CO_NMT();
         }
     }
-    
+
 
 
 </body fullname="/project/Tera_7/Programs/task100_POUs/slaveConfig">
@@ -4266,14 +4266,14 @@ winscope_access_write = ''
 
     // Check return last pou
     IF vt3_configure_slave_IO_CORE_CPU0.is_busy = FALSE THEN
-        
+
         // Configuration is not running and not completed. Set up start flag
-        IF vt3_configure_slave_IO_CORE_CPU0.progress = 0 THEN    
+        IF vt3_configure_slave_IO_CORE_CPU0.progress = 0 THEN
             vt3_configure_slave_IO_CORE_CPU0.start := TRUE;
         ELSIF vt3_configure_slave_IO_CORE_CPU0.progress != 100 THEN
             // Insert here code to handle configuration fail
             NIL;
-        ELSE    
+        ELSE
             // configuration has completed
             vt3_configure_slave_IO_CORE_CPU0.start := FALSE;
         END_IF
@@ -4281,7 +4281,7 @@ winscope_access_write = ''
         // Use vt3_configure_slave_CORE_CPU0.progress to monitor initialization
         NIL;
     END_IF
-    
+
     /* For an example see VT3 manual "ST Example" */
 
 
@@ -4331,14 +4331,14 @@ winscope_access_write = ''
 
     // Check return last pou
     IF vt3_configure_slave_IO_CORE_CPU1.is_busy = FALSE THEN
-        
+
         // Configuration is not running and not completed. Set up start flag
-        IF vt3_configure_slave_IO_CORE_CPU1.progress = 0 THEN    
+        IF vt3_configure_slave_IO_CORE_CPU1.progress = 0 THEN
             vt3_configure_slave_IO_CORE_CPU1.start := TRUE;
         ELSIF vt3_configure_slave_IO_CORE_CPU1.progress != 100 THEN
             // Insert here code to handle configuration fail
             NIL;
-        ELSE    
+        ELSE
             // configuration has completed
             vt3_configure_slave_IO_CORE_CPU1.start := FALSE;
         END_IF
@@ -4346,7 +4346,7 @@ winscope_access_write = ''
         // Use vt3_configure_slave_CORE_CPU0.progress to monitor initialization
         NIL;
     END_IF
-    
+
     /* For an example see VT3 manual "ST Example" */
 
 
@@ -4500,7 +4500,7 @@ winscope_access_write = ''
 
 
     y = ya * ((x-xb) / (xa-xb)) - yb * ((x-xa)/(xa-xb));
-    
+
     return y;
 
 
@@ -4552,7 +4552,7 @@ palette_layer_1 = 0
 
 
     splashCounter ++;
-    
+
 	if (splashCounter == 30)
     {
         updateEnable = TRUE;
@@ -4561,7 +4561,7 @@ palette_layer_1 = 0
             reqScreen = SCREEN_HOME;
         }
     }
-    
+
     if (vt3_screen != reqScreen)
     {
         vt3_screen = reqScreen;
@@ -4625,7 +4625,7 @@ palette_layer_1 = 0
 
 
    /*Home Screen Button Logic*/
-	 if (ind_screen_frame_key_F1.eventDown)  
+	 if (ind_screen_frame_key_F1.eventDown)
     {
         if (SystemOn == 0)
         {
@@ -4636,7 +4636,7 @@ palette_layer_1 = 0
             SystemOn = 0;
         }
     }
-    else if (ind_screen_frame_key_F2.eventDown) 
+    else if (ind_screen_frame_key_F2.eventDown)
     {
         if (AutoMan == 0)
         {
@@ -4650,8 +4650,8 @@ palette_layer_1 = 0
         }
     }
     else if ((ind_screen_frame_key_F3.eventDown) &&
-            (SystemOn) &&       
-            (AutoMan == 1))  
+            (SystemOn) &&
+            (AutoMan == 1))
     {
         if (FanOnMan == 0)
         {
@@ -4665,8 +4665,8 @@ palette_layer_1 = 0
         }
     }
     else if ((ind_screen_frame_key_F4.eventDown) &&
-            (SystemOn) && 
-            (AutoMan == 1)) 
+            (SystemOn) &&
+            (AutoMan == 1))
     {
         if (AcOnMan == 0)
         {
@@ -4680,8 +4680,8 @@ palette_layer_1 = 0
         }
     }
     else if ((ind_screen_frame_key_F5.eventDown) &&
-                (SystemOn) && 
-                (AutoMan == 1))  
+                (SystemOn) &&
+                (AutoMan == 1))
     {
         if (HeatOnMan == 0)
         {
@@ -4692,9 +4692,9 @@ palette_layer_1 = 0
         else
         {
             HeatOnMan = 0;
-        }        
+        }
     }
-    else if (ind_screen_frame_key_F6.eventDown) 
+    else if (ind_screen_frame_key_F6.eventDown)
     {
         if (InteriorLightsOn == 0)
         {
@@ -4703,18 +4703,18 @@ palette_layer_1 = 0
         else
         {
             InteriorLightsOn = 0;
-        }        
+        }
     }
-    else if (ind_screen_frame_key_F7.eventDown) 
+    else if (ind_screen_frame_key_F7.eventDown)
     {
-        reqScreen = SCREEN_CAMERA_2;      
-        
+        reqScreen = SCREEN_CAMERA_2;
+
         if (vt3_screen != reqScreen)
         {
             vt3_screen = reqScreen;
         }
     }
-    else if (ind_screen_frame_key_F9.eventDown) 
+    else if (ind_screen_frame_key_F9.eventDown)
     {
         if (StrobeLightsOn == 0)
         {
@@ -4723,9 +4723,9 @@ palette_layer_1 = 0
         else
         {
             StrobeLightsOn = 0;
-        }        
+        }
     }
-     else if (ind_screen_frame_key_F10.eventDown)  
+     else if (ind_screen_frame_key_F10.eventDown)
     {
         if (StrobePatternPulse == 0)
         {
@@ -4736,150 +4736,150 @@ palette_layer_1 = 0
             /*Do Nothing */
         }
     }
-    else if (ind_screen_frame_key_F11.eventDown) 
+    else if (ind_screen_frame_key_F11.eventDown)
     {
         p_Brightness += 100;
-        
+
         if (p_Brightness > 1000)
         {
             p_Brightness = 1000;
         }
-        
+
         SaveP = TRUE;
     }
-    else if (ind_screen_frame_key_F12.eventDown) 
+    else if (ind_screen_frame_key_F12.eventDown)
     {
         p_Brightness -= 100;
-        
+
         if (p_Brightness < 0)
         {
             p_Brightness = 0;
         }
-        
+
         SaveP = TRUE;
-    }       
-            
+    }
+
     /*Strobe Pulse Pattern Logic*/
-    if ((StrobePatternPulse == 1) && 
-        (StrobePatternPulseTime < 10)) 
+    if ((StrobePatternPulse == 1) &&
+        (StrobePatternPulseTime < 10))
         {
-            StrobePatternPulseTime ++; 
+            StrobePatternPulseTime ++;
         }
         else
         {
             StrobePatternPulse = 0;
             StrobePatternPulseTime = 0;
         }
-    
+
     /*Reset Fan/AC/Heat MANUAL Signals when in AUTO*/
-    if ((AutoMan == 0) || 
+    if ((AutoMan == 0) ||
         (SystemOn == 0))
         {
             FanOnMan = 0;
             AcOnMan = 0;
             HeatOnMan = 0;
-        }  
-       
+        }
+
     /*Set Units to F*/
     p_Units = 0;
-    
+
     /*Set Temp Alarms*/
     if ((kennel1Temp < p_LowerAlarmSetPoint) ||
         (kennel1Temp > p_UpperAlarmSetPoint))
         {
         kennelZone1_bitmap = 2;
-        kennel1Alarm = 1;        
+        kennel1Alarm = 1;
         }
-    else 
+    else
         {
-        kennelZone1_bitmap = 1; 
+        kennelZone1_bitmap = 1;
         kennel1Alarm = 0;
         }
-    
+
      if ((kennel2Temp < p_LowerAlarmSetPoint) ||
         (kennel2Temp > p_UpperAlarmSetPoint))
         {
-        kennelZone2_bitmap = 2; 
+        kennelZone2_bitmap = 2;
         kennel2Alarm = 1;
         }
-        else 
+        else
         {
-        kennelZone2_bitmap = 1; 
+        kennelZone2_bitmap = 1;
         kennel2Alarm = 0;
         }
-    
+
     if ((kennel3Temp < p_LowerAlarmSetPoint) ||
         (kennel3Temp > p_UpperAlarmSetPoint))
         {
-        kennelZone3_bitmap = 2; 
+        kennelZone3_bitmap = 2;
         kennel3Alarm = 1;
         }
-    else 
+    else
         {
-        kennelZone3_bitmap = 1; 
+        kennelZone3_bitmap = 1;
         kennel3Alarm = 0;
         }
-    
+
      if ((kennel4Temp < p_LowerAlarmSetPoint) ||
         (kennel4Temp > p_UpperAlarmSetPoint))
         {
         kennelZone4_bitmap = 2;
         kennel4Alarm = 1;
         }
-    else 
+    else
         {
-        kennelZone4_bitmap = 1; 
+        kennelZone4_bitmap = 1;
         kennel4Alarm = 0;
         }
-    
+
      if ((kennel5Temp < p_LowerAlarmSetPoint) ||
         (kennel5Temp > p_UpperAlarmSetPoint))
         {
         kennelZone5_bitmap = 2;
         kennel5Alarm = 1;
         }
-    else 
+    else
         {
-        kennelZone5_bitmap = 1; 
+        kennelZone5_bitmap = 1;
         kennel5Alarm = 0;
         }
-    
+
      if ((kennel6Temp < p_LowerAlarmSetPoint) ||
         (kennel6Temp > p_UpperAlarmSetPoint))
         {
-        kennelZone6_bitmap = 2; 
+        kennelZone6_bitmap = 2;
         kennel6Alarm = 1;
         }
-    else 
+    else
         {
-        kennelZone6_bitmap = 1; 
+        kennelZone6_bitmap = 1;
         kennel6Alarm = 0;
         }
-        
+
     if ((kennel7Temp < p_LowerAlarmSetPoint) ||
         (kennel7Temp > p_UpperAlarmSetPoint))
         {
         kennelZone7_bitmap = 2;
-        kennel7Alarm = 1;        
+        kennel7Alarm = 1;
         }
-    else 
+    else
         {
-        kennelZone7_bitmap = 1; 
+        kennelZone7_bitmap = 1;
         kennel7Alarm = 0;
         }
-        
+
     if ((kennel8Temp < p_LowerAlarmSetPoint) ||
         (kennel8Temp > p_UpperAlarmSetPoint))
         {
         kennelZone8_bitmap = 2;
-        kennel8Alarm = 1;        
+        kennel8Alarm = 1;
         }
-    else 
+    else
         {
-        kennelZone8_bitmap = 1; 
+        kennelZone8_bitmap = 1;
         kennel8Alarm = 0;
         }
-    
+
 
     /* Save Parameters from Set Up Screen */
     if (SetupSaveFlag == 1)
@@ -4889,35 +4889,35 @@ palette_layer_1 = 0
         }
     /*Reset Parameter Index Used on Setup Screen */
     Parameter_Index = 1;
-    
+
      /* Go to Set-Up Screen */
     if ((ind_screen_frame_key_F13.pressedTime > 3000) &&
         (ind_screen_frame_key_F15.pressedTime > 3000))
         {
-          reqScreen = SCREEN_SETUP;            
+          reqScreen = SCREEN_SETUP;
         }
-    
+
     if (IO_ReverseGear == 1)
         {
             reqScreen = SCREEN_CAMERA;
-        
+
             if (vt3_screen != reqScreen)
             {
                 vt3_screen = reqScreen;
             }
-        
+
         }
-        
+
     if (vt3_screen != reqScreen)
         {
             vt3_screen = reqScreen;
         }
-        
-        
+
+
      if ((BuzzerTera == 1) &&
         (ind_screen_frame_key_F14.eventDown))
         {
-          SilenceBuzzer = 1;  
+          SilenceBuzzer = 1;
         }
     else if ((kennel1Alarm == 0) &&
             (kennel2Alarm == 0) &&
@@ -4929,94 +4929,94 @@ palette_layer_1 = 0
             (kennel8Alarm == 0) &&
             (SilenceBuzzer == 1))
             {
-            SilenceBuzzerReset ++ ;  
+            SilenceBuzzerReset ++ ;
             }
     if (SilenceBuzzerReset >= 10)
         {
             SilenceBuzzer = 0;
             SilenceBuzzerReset = 0;
         }
-        
+
     if ((kennel1Alarm == 1) &&
         (ind_screen_frame_key_F14.eventDown))
         {
-           kennel1Alarm_Silence = 1; 
+           kennel1Alarm_Silence = 1;
         }
     else if (kennel1Alarm == 0)
         {
             kennel1Alarm_Silence = 0;
         }
-        
+
     if ((kennel2Alarm == 1) &&
         (ind_screen_frame_key_F14.eventDown))
         {
-           kennel2AlarmBuzzer_Silence = 1; 
+           kennel2AlarmBuzzer_Silence = 1;
         }
     else if (kennel2Alarm == 0)
         {
             kennel2AlarmBuzzer_Silence = 0;
         }
-        
+
     if ((kennel3Alarm == 1) &&
         (ind_screen_frame_key_F14.eventDown))
         {
-           kennel3AlarmBuzzer_Silence = 1; 
+           kennel3AlarmBuzzer_Silence = 1;
         }
     else if (kennel3Alarm == 0)
         {
             kennel3AlarmBuzzer_Silence = 0;
         }
-        
+
     if ((kennel4Alarm == 1) &&
         (ind_screen_frame_key_F14.eventDown))
         {
-           kennel4AlarmBuzzer_Silence = 1; 
+           kennel4AlarmBuzzer_Silence = 1;
         }
     else if (kennel4Alarm == 0)
         {
             kennel4AlarmBuzzer_Silence = 0;
         }
-        
+
     if ((kennel5Alarm == 1) &&
         (ind_screen_frame_key_F14.eventDown))
         {
-           kennel5AlarmBuzzer_Silence = 1; 
+           kennel5AlarmBuzzer_Silence = 1;
         }
     else if (kennel5Alarm == 0)
         {
             kennel5AlarmBuzzer_Silence = 0;
         }
-        
+
     if ((kennel6Alarm == 1) &&
         (ind_screen_frame_key_F14.eventDown))
         {
-           kennel6AlarmBuzzer_Silence = 1; 
+           kennel6AlarmBuzzer_Silence = 1;
         }
     else if (kennel6Alarm == 0)
         {
             kennel6AlarmBuzzer_Silence = 0;
         }
-        
+
     if ((kennel7Alarm == 1) &&
         (ind_screen_frame_key_F14.eventDown))
         {
-           kennel7AlarmBuzzer_Silence = 1; 
+           kennel7AlarmBuzzer_Silence = 1;
         }
     else if (kennel7Alarm == 0)
         {
             kennel7AlarmBuzzer_Silence = 0;
         }
-        
+
     if ((kennel8Alarm == 1) &&
         (ind_screen_frame_key_F14.eventDown))
         {
-           kennel8AlarmBuzzer_Silence = 1; 
+           kennel8AlarmBuzzer_Silence = 1;
         }
     else if (kennel8Alarm == 0)
         {
             kennel8AlarmBuzzer_Silence = 0;
         }
-        
+
 
 
 </event_code fullname="/project/Tera_7/Screens/home">
@@ -6266,7 +6266,7 @@ class = 'MultiBitmap'
 name = u'Button'
 body_language = 'ST'
 x = 678
-y = 98
+y = 196
 width = 122
 height = 88
 hide = False
@@ -6294,7 +6294,7 @@ class = 'SimpleText'
 name = u'Text_1'
 body_language = 'C'
 x = 689
-y = 116
+y = 214
 width = 100
 height = 56
 hide = False
@@ -7037,6 +7037,18 @@ editable = False
 
 </node fullname="/project/Tera_7/Screens/home/group_3">
 
+<node fullname="/project/Tera_7/Screens/home/circle">
+
+[GENERAL]
+bigfile = 1
+module = 'model.indicatorModel.simpleCircle'
+class = 'SimpleCircle'
+[ATTRIBUTES]
+name = 'circle'
+body_language = 'C'
+X = 732
+Y = 140
+radius = 35
 <node fullname="/project/Tera_7/Screens/home/simple_rect_2">
 
 [GENERAL]
@@ -7058,6 +7070,9 @@ border (repr) = 'ColorOnly((128, 128, 128),)'
 fill (repr) = 'ColorOnly((255, 31, 255),)'
 
 </node fullname="/project/Tera_7/Screens/home/simple_rect_2">
+fill (repr) = 'ColorOnly((0, 127, 255),)'
+
+</node fullname="/project/Tera_7/Screens/home/circle">
 
 </childs fullname="/project/Tera_7/Screens/home">
 
@@ -7089,180 +7104,180 @@ palette_layer_1 = 0
     if ((Parameter_Index == 0) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-        Parameter_Index = 7; 
+        Parameter_Index = 7;
         }
     else if ((Parameter_Index == 0) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-        Parameter_Index = 1; 
+        Parameter_Index = 1;
         }
     else if ((Parameter_Index == 1) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-        Parameter_Index = 7; 
+        Parameter_Index = 7;
         }
     else if ((Parameter_Index == 1) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-        Parameter_Index = 2; 
+        Parameter_Index = 2;
         }
     else if ((Parameter_Index == 2) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-        Parameter_Index = 1; 
+        Parameter_Index = 1;
         }
     else if ((Parameter_Index == 2) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-        Parameter_Index = 3; 
+        Parameter_Index = 3;
         }
     else if ((Parameter_Index == 3) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-        Parameter_Index = 2; 
+        Parameter_Index = 2;
         }
     else if ((Parameter_Index == 3) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-        Parameter_Index = 4; 
+        Parameter_Index = 4;
         }
     else if ((Parameter_Index == 4) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-        Parameter_Index = 3; 
+        Parameter_Index = 3;
         }
     else if ((Parameter_Index == 4) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-        Parameter_Index = 5; 
+        Parameter_Index = 5;
         }
     else if ((Parameter_Index == 5) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-        Parameter_Index = 4; 
+        Parameter_Index = 4;
         }
     else if ((Parameter_Index == 5) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-        Parameter_Index = 6; 
+        Parameter_Index = 6;
         }
     else if ((Parameter_Index == 6) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-        Parameter_Index = 5; 
+        Parameter_Index = 5;
         }
     else if ((Parameter_Index == 6) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-        Parameter_Index = 7; 
+        Parameter_Index = 7;
         }
     else if ((Parameter_Index == 7) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-        Parameter_Index = 6; 
+        Parameter_Index = 6;
         }
     else if ((Parameter_Index == 7) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-        Parameter_Index = 1; 
+        Parameter_Index = 1;
         }
      else if ((Parameter_Index == 8) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-        Parameter_Index = 7; 
+        Parameter_Index = 7;
         }
     else if ((Parameter_Index == 8) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-        Parameter_Index = 1; 
+        Parameter_Index = 1;
         }
-        
+
     /*Select and Exit Parameter Selection*/
     if ((Parameter_Index > 0) &&
         (Parameter_Index < 10) &&
         (ind_screen_frame_key_F15.eventDown))
         {
-        Parameter_Index = (Parameter_Index + 10); 
+        Parameter_Index = (Parameter_Index + 10);
         }
     else if ((Parameter_Index >10) &&
         (Parameter_Index <20) &&
         (ind_screen_frame_key_F15.eventDown))
         {
-        Parameter_Index = (Parameter_Index - 10); 
+        Parameter_Index = (Parameter_Index - 10);
         }
-    
+
     /*Highlight Paramter Field */
     if (Parameter_Index == 1)
     {
-    BG_Color_1 = 1;    
+    BG_Color_1 = 1;
     }
     else
     {
-    BG_Color_1 = 0;    
+    BG_Color_1 = 0;
     }
-    
+
     if (Parameter_Index == 11)
     {
-    BG_Color_1_1 = 1;    
+    BG_Color_1_1 = 1;
     }
     else
     {
-    BG_Color_1_1 = 0;    
+    BG_Color_1_1 = 0;
     }
-    
+
     if (Parameter_Index == 2)
     {
-    BG_Color_2 = 1;    
+    BG_Color_2 = 1;
     }
     else
     {
-    BG_Color_2 = 0;    
+    BG_Color_2 = 0;
     }
     if (Parameter_Index == 12)
     {
-    BG_Color_2_1 = 1;    
+    BG_Color_2_1 = 1;
     }
     else
     {
-    BG_Color_2_1 = 0;   
+    BG_Color_2_1 = 0;
     }
     if (Parameter_Index == 3)
     {
-    BG_Color_3 = 1;    
+    BG_Color_3 = 1;
     }
     else
     {
-    BG_Color_3 = 0;  
+    BG_Color_3 = 0;
     }
     if (Parameter_Index == 13)
     {
-    BG_Color_3_1 = 1;    
+    BG_Color_3_1 = 1;
     }
     else
     {
-    BG_Color_3_1 = 0;  
+    BG_Color_3_1 = 0;
     }
     if (Parameter_Index == 4)
     {
-    BG_Color_4 = 1;    
+    BG_Color_4 = 1;
     }
     else
     {
-    BG_Color_4 = 0;  
+    BG_Color_4 = 0;
     }
-    
+
     if (Parameter_Index == 14)
     {
-    BG_Color_4_1 = 1;    
+    BG_Color_4_1 = 1;
     }
     else
     {
-    BG_Color_4_1 = 0;  
+    BG_Color_4_1 = 0;
     }
-      
+
     if (Parameter_Index == 5)
     {
-    BG_Color_5 = 1;    
+    BG_Color_5 = 1;
     }
     else
     {
@@ -7270,7 +7285,7 @@ palette_layer_1 = 0
     }
     if (Parameter_Index == 15)
     {
-    BG_Color_5_1 = 1;    
+    BG_Color_5_1 = 1;
     }
     else
     {
@@ -7278,243 +7293,243 @@ palette_layer_1 = 0
     }
     if (Parameter_Index == 6)
     {
-    BG_Color_6 = 1;    
+    BG_Color_6 = 1;
     }
     else
     {
-    BG_Color_6 = 0; 
+    BG_Color_6 = 0;
     }
     if (Parameter_Index == 16)
     {
-    BG_Color_6_1 = 1;    
+    BG_Color_6_1 = 1;
     }
     else
     {
-    BG_Color_6_1 = 0; 
+    BG_Color_6_1 = 0;
     }
     if (Parameter_Index == 7)
     {
-    BG_Color_7 = 1;    
+    BG_Color_7 = 1;
     }
     else
     {
-    BG_Color_7 = 0;  
+    BG_Color_7 = 0;
     }
     if (Parameter_Index == 17)
     {
-    BG_Color_7_1 = 1;    
+    BG_Color_7_1 = 1;
     }
     else
     {
-    BG_Color_7_1 = 0; 
+    BG_Color_7_1 = 0;
     }
     if (Parameter_Index == 8)
     {
-    BG_Color_8 = 1;    
+    BG_Color_8 = 1;
     }
     else
     {
-    BG_Color_8 = 0;  
+    BG_Color_8 = 0;
     }
     if (Parameter_Index == 18)
     {
-    BG_Color_8_1 = 1;    
+    BG_Color_8_1 = 1;
     }
     else
     {
-    BG_Color_8_1 = 0;  
+    BG_Color_8_1 = 0;
     }
     /*Set AC Setpoint Parameter */
     ACMinSetting = (p_HeatSetPoint + p_HeatDeadband + 10);
-    
-    if (((Parameter_Index == 11) && 
+
+    if (((Parameter_Index == 11) &&
         (p_ACSetPoint < 99)) &&
         ((ind_screen_frame_key_F11.eventDown) ||
             (ind_screen_frame_key_F11.pressedTime > 3000)))
         {
-         p_ACSetPoint ++;   
+         p_ACSetPoint ++;
         }
-    else if ((Parameter_Index == 11) && 
+    else if ((Parameter_Index == 11) &&
         (p_ACSetPoint == 99) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-         p_ACSetPoint = ACMinSetting; //40  
+         p_ACSetPoint = ACMinSetting; //40
         }
-    else if (((Parameter_Index == 11) && 
+    else if (((Parameter_Index == 11) &&
         (p_ACSetPoint > ACMinSetting)) && //41
         ((ind_screen_frame_key_F12.eventDown) ||
             (ind_screen_frame_key_F12.pressedTime > 3000)))
         {
-         p_ACSetPoint --;   
+         p_ACSetPoint --;
         }
-    else if ((Parameter_Index == 11) && 
+    else if ((Parameter_Index == 11) &&
         (p_ACSetPoint == ACMinSetting) && //
         (ind_screen_frame_key_F12.eventDown))
         {
-         p_ACSetPoint = 99;   
+         p_ACSetPoint = 99;
         }
     if (p_ACSetPoint < ACMinSetting)
         {
         p_ACSetPoint = ACMinSetting;
         }
      /*Set AC Deadband Parameter */
-    if (((Parameter_Index == 12) && 
+    if (((Parameter_Index == 12) &&
         (p_ACDeadband < 20)) &&
         ((ind_screen_frame_key_F11.eventDown) ||
         (ind_screen_frame_key_F11.pressedTime > 3000)))
         {
-         p_ACDeadband ++;   
+         p_ACDeadband ++;
         }
-    else if ((Parameter_Index == 12) && 
+    else if ((Parameter_Index == 12) &&
         (p_ACDeadband == 20) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-         p_ACDeadband = 1;   
+         p_ACDeadband = 1;
         }
-    else if (((Parameter_Index == 12) && 
+    else if (((Parameter_Index == 12) &&
         (p_ACDeadband > 1)) &&
         ((ind_screen_frame_key_F12.eventDown) ||
-        (ind_screen_frame_key_F12.pressedTime > 3000)))        
+        (ind_screen_frame_key_F12.pressedTime > 3000)))
         {
-         p_ACDeadband --;   
+         p_ACDeadband --;
         }
-    else if ((Parameter_Index == 12) && 
+    else if ((Parameter_Index == 12) &&
         (p_ACDeadband == 1) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-         p_ACDeadband = 20;   
+         p_ACDeadband = 20;
         }
-    
+
      /*Set Heat Setpoint Parameter */
-     HeatMaxSetting = (p_ACSetPoint - (p_ACDeadband + 10)); 
-     
-    if (((Parameter_Index == 13) && 
+     HeatMaxSetting = (p_ACSetPoint - (p_ACDeadband + 10));
+
+    if (((Parameter_Index == 13) &&
         (p_HeatSetPoint < HeatMaxSetting)) && //99
         ((ind_screen_frame_key_F11.eventDown) ||
         (ind_screen_frame_key_F11.pressedTime > 3000)))
         {
-         p_HeatSetPoint ++;   
+         p_HeatSetPoint ++;
         }
-    else if ((Parameter_Index == 13) && 
+    else if ((Parameter_Index == 13) &&
         (p_HeatSetPoint == HeatMaxSetting) && //99
         (ind_screen_frame_key_F11.eventDown))
         {
-         p_HeatSetPoint = 0;   
+         p_HeatSetPoint = 0;
         }
-    else if (((Parameter_Index == 13) && 
+    else if (((Parameter_Index == 13) &&
         (p_HeatSetPoint > 0)) &&
         ((ind_screen_frame_key_F12.eventDown) ||
         (ind_screen_frame_key_F12.pressedTime > 3000)))
         {
-         p_HeatSetPoint --;   
+         p_HeatSetPoint --;
         }
-    else if ((Parameter_Index == 13) && 
+    else if ((Parameter_Index == 13) &&
         (p_HeatSetPoint == 0) && //40
         (ind_screen_frame_key_F12.eventDown))
         {
-         p_HeatSetPoint = HeatMaxSetting;   
+         p_HeatSetPoint = HeatMaxSetting;
         }
     if (p_HeatSetPoint > HeatMaxSetting)
         {
         p_HeatSetPoint = HeatMaxSetting;
         }
-        
+
      /*Set Heat Deadband Parameter */
-    if (((Parameter_Index == 14) && 
+    if (((Parameter_Index == 14) &&
         (p_HeatDeadband < 20)) &&
         ((ind_screen_frame_key_F11.eventDown) ||
         (ind_screen_frame_key_F11.pressedTime > 3000)))
         {
-         p_HeatDeadband ++;   
+         p_HeatDeadband ++;
         }
-    else if ((Parameter_Index == 14) && 
+    else if ((Parameter_Index == 14) &&
         (p_HeatDeadband == 20) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-         p_HeatDeadband = 1;   
+         p_HeatDeadband = 1;
         }
-    else if (((Parameter_Index == 14) && 
+    else if (((Parameter_Index == 14) &&
         (p_HeatDeadband > 1)) &&
         ((ind_screen_frame_key_F12.eventDown) ||
         (ind_screen_frame_key_F12.pressedTime > 3000)))
         {
-         p_HeatDeadband --;   
+         p_HeatDeadband --;
         }
-    else if ((Parameter_Index == 14) && 
+    else if ((Parameter_Index == 14) &&
         (p_HeatDeadband == 1) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-         p_HeatDeadband = 20;   
+         p_HeatDeadband = 20;
         }
-        
+
     /*Set Lower Alarm Parameter */
-    if (((Parameter_Index == 15) && 
+    if (((Parameter_Index == 15) &&
         (p_LowerAlarmSetPoint < 150)) &&
         ((ind_screen_frame_key_F11.eventDown) ||
         (ind_screen_frame_key_F11.pressedTime > 3000)))
         {
-         p_LowerAlarmSetPoint ++;   
+         p_LowerAlarmSetPoint ++;
         }
-    else if ((Parameter_Index == 15) && 
+    else if ((Parameter_Index == 15) &&
         (p_LowerAlarmSetPoint == 150) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-         p_LowerAlarmSetPoint = 0;   
+         p_LowerAlarmSetPoint = 0;
         }
-    else if (((Parameter_Index == 15) && 
+    else if (((Parameter_Index == 15) &&
         (p_LowerAlarmSetPoint > 0)) &&
         ((ind_screen_frame_key_F12.eventDown) ||
         (ind_screen_frame_key_F12.pressedTime > 3000)))
         {
-         p_LowerAlarmSetPoint --;   
+         p_LowerAlarmSetPoint --;
         }
-    else if ((Parameter_Index == 15) && 
+    else if ((Parameter_Index == 15) &&
         (p_LowerAlarmSetPoint == 0) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-         p_LowerAlarmSetPoint = 150;   
+         p_LowerAlarmSetPoint = 150;
         }
-        
+
     /*Set Upper Alarm Parameter */
-    if (((Parameter_Index == 16) && 
+    if (((Parameter_Index == 16) &&
         (p_UpperAlarmSetPoint < 150)) &&
         ((ind_screen_frame_key_F11.eventDown) ||
         (ind_screen_frame_key_F11.pressedTime > 3000)))
         {
-         p_UpperAlarmSetPoint ++;   
+         p_UpperAlarmSetPoint ++;
         }
-    else if ((Parameter_Index == 16) && 
+    else if ((Parameter_Index == 16) &&
         (p_UpperAlarmSetPoint == 150) &&
         (ind_screen_frame_key_F11.eventDown))
         {
-         p_UpperAlarmSetPoint = 0;   
+         p_UpperAlarmSetPoint = 0;
         }
-    else if (((Parameter_Index == 16) && 
+    else if (((Parameter_Index == 16) &&
         (p_UpperAlarmSetPoint > 0)) &&
         ((ind_screen_frame_key_F12.eventDown) ||
         (ind_screen_frame_key_F12.pressedTime > 3000)))
         {
-         p_UpperAlarmSetPoint --;   
+         p_UpperAlarmSetPoint --;
         }
-    else if ((Parameter_Index == 16) && 
+    else if ((Parameter_Index == 16) &&
         (p_UpperAlarmSetPoint == 0) &&
         (ind_screen_frame_key_F12.eventDown))
         {
-         p_UpperAlarmSetPoint = 150;   
+         p_UpperAlarmSetPoint = 150;
         }
-    
 
-     
+
+
      /* Set Set-Up Screen Save Flag*/
      SetupSaveFlag = 1;
-     
-     
+
+
 	/*Exit Setup to Home Screen */
     if (ind_screen_frame_key_F10.eventDown)
         {
-          reqScreen = SCREEN_HOME;           
+          reqScreen = SCREEN_HOME;
         }
-        
+
     if (vt3_screen != reqScreen)
     {
         vt3_screen = reqScreen;
@@ -8806,17 +8821,17 @@ palette_layer_1 = 0
 
 
 
-	
+
     if (IO_ReverseGear == 0)
     {
         reqScreen = SCREEN_HOME;
-        
+
         if (vt3_screen != reqScreen)
         {
             vt3_screen = reqScreen;
         }
     }
-    
+
 
 
 
@@ -8874,18 +8889,18 @@ palette_layer_1 = 0
 
 
 
-	
+
     /*Exit Camera_2 to Home Screen */
     if (ind_screen_frame_key_F10.eventDown)
         {
-          reqScreen = SCREEN_HOME;           
+          reqScreen = SCREEN_HOME;
         }
-        
+
     if (vt3_screen != reqScreen)
     {
         vt3_screen = reqScreen;
     }
-    
+
 
 
 
