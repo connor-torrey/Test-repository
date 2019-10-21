@@ -390,7 +390,6 @@ port_number = 0
 j1939_source_address = 18
 whitelist = [u'IO1_state', u'IO2_state']
 last_excel_import_export_filename = ''
-j1939_name = 'FFFFFFFFFFFFFFFF'
 
 <childs fullname="/project/Tera_7/CAN_interface">
 
@@ -893,16 +892,12 @@ module = 'model.taskTableModel'
 class = 'TaskTableModel'
 [ATTRIBUTES]
 name = 'tasks'
-can_task_watchdog = 0
-video_task_watchdog = 0
-plc_prg_task_watchdog = 0
 [TASKS]
 count = 1
 [TASK_0]
 priority = 1
 period = 100
 delay = 0
-watchdog = 0
 program = u'task100'
 
 </node fullname="/project/Tera_7/tasks">
@@ -1664,11 +1659,11 @@ class = 'GlobalDataModel'
 name = 'global_data'
 last_excel_import_export_filename = ''
 [VARIABLES]
-count = 17
+count = 18
 [VAR_0]
 name = u'SaveP'
 vartype = u'BOOL'
-address = '%MX0'
+address = u'%MX0'
 alias = False
 init = u''
 inp = False
@@ -1686,7 +1681,7 @@ winscope_access_write = u''
 [VAR_1]
 name = u'SaveR'
 vartype = u'BOOL'
-address = '%MX1'
+address = u'%MX1'
 alias = False
 init = u''
 inp = False
@@ -1704,7 +1699,7 @@ winscope_access_write = u''
 [VAR_2]
 name = u'ignoreMaintenanceAlarm'
 vartype = u'BOOL'
-address = '%MX3'
+address = u'%MX3'
 alias = False
 init = u''
 inp = False
@@ -1722,7 +1717,7 @@ winscope_access_write = u''
 [VAR_3]
 name = u'updateRequested'
 vartype = u'BOOL'
-address = '%MX4'
+address = u'%MX4'
 alias = False
 init = u''
 inp = False
@@ -1740,7 +1735,7 @@ winscope_access_write = u''
 [VAR_4]
 name = u'updateEnable'
 vartype = u'BOOL'
-address = '%MX5'
+address = u'%MX5'
 alias = False
 init = u''
 inp = False
@@ -1758,7 +1753,7 @@ winscope_access_write = u''
 [VAR_5]
 name = u'rearCameraEnabledForReverse'
 vartype = u'BOOL'
-address = '%MX6'
+address = u'%MX6'
 alias = False
 init = u''
 inp = False
@@ -1776,7 +1771,7 @@ winscope_access_write = u''
 [VAR_6]
 name = u'rearCameraWaitToRelease'
 vartype = u'BOOL'
-address = '%MX7'
+address = u'%MX7'
 alias = False
 init = u''
 inp = False
@@ -1794,7 +1789,7 @@ winscope_access_write = u''
 [VAR_7]
 name = u'rearCameraTimer'
 vartype = u'BOOL'
-address = '%MX8'
+address = u'%MX8'
 alias = False
 init = u''
 inp = False
@@ -1812,7 +1807,7 @@ winscope_access_write = u''
 [VAR_8]
 name = u'BacklightTera'
 vartype = u'UINT'
-address = '%MW10'
+address = u'%MW10'
 alias = False
 init = u''
 inp = False
@@ -1830,7 +1825,7 @@ winscope_access_write = u''
 [VAR_9]
 name = u'reqScreen'
 vartype = u'UINT'
-address = '%MW12'
+address = u'%MW12'
 alias = False
 init = u''
 inp = False
@@ -1848,7 +1843,7 @@ winscope_access_write = u''
 [VAR_10]
 name = u'rebootThenUpdate'
 vartype = u'USINT'
-address = '%PB100'
+address = u'%PB100'
 alias = False
 init = u''
 inp = False
@@ -1866,7 +1861,7 @@ winscope_access_write = u''
 [VAR_11]
 name = u'parametersCode'
 vartype = u'UINT'
-address = '%PW20'
+address = u'%PW20'
 alias = False
 init = u'1234'
 inp = False
@@ -1884,7 +1879,7 @@ winscope_access_write = u''
 [VAR_12]
 name = u'BuzzerTera'
 vartype = u'BOOL'
-address = '%PX18'
+address = u'%PX18'
 alias = False
 init = u''
 inp = False
@@ -1902,7 +1897,7 @@ winscope_access_write = u''
 [VAR_13]
 name = u'AlarmMessage'
 vartype = u'USINT'
-address = '%MB20'
+address = u'%MB20'
 alias = False
 init = u''
 inp = False
@@ -1920,7 +1915,7 @@ winscope_access_write = u''
 [VAR_14]
 name = u'SilenceBuzzer'
 vartype = u'BOOL'
-address = '%MX21'
+address = u'%MX21'
 alias = False
 init = u''
 inp = False
@@ -1938,7 +1933,7 @@ winscope_access_write = u''
 [VAR_15]
 name = u'SilenceBuzzerReset'
 vartype = u'UINT'
-address = '%MW22'
+address = u'%MW22'
 alias = False
 init = u''
 inp = False
@@ -1956,7 +1951,25 @@ winscope_access_write = u''
 [VAR_16]
 name = u'StartUpTimer'
 vartype = u'UINT'
-address = '%MW24'
+address = u'%MW24'
+alias = False
+init = u''
+inp = False
+out = False
+temp = False
+constant = False
+comment = u''
+winscope_min = u''
+winscope_max = u''
+winscope_unit = u''
+winscope_scale = u''
+winscope_offset = u''
+winscope_access_read = u''
+winscope_access_write = u''
+[VAR_17]
+name = u'testVar'
+vartype = u'UINT'
+address = u'%M+'
 alias = False
 init = u''
 inp = False
@@ -3442,7 +3455,7 @@ count = 0
     doBrightness__call();
     usbUpdate__call();
     outputs__call();
-    
+    testVar = 1;
     if (parametersCode != 1234) // --> BE SURE THAT THIS CODE IS EQUAL TO parametersCode INIT VALUE!!!
     {
         INIT_BYTEARRAY_P__call();
@@ -6190,7 +6203,6 @@ YA = 85
 XB = 404
 YB = 413
 T = 5
-linestyle = 0
 hide = False
 lock = False
 layer = 0
@@ -6212,7 +6224,6 @@ YA = 249
 XB = 260
 YB = 249
 T = 5
-linestyle = 0
 hide = False
 lock = False
 layer = 0
@@ -6234,7 +6245,6 @@ YA = 248
 XB = 537
 YB = 248
 T = 5
-linestyle = 0
 hide = False
 lock = False
 layer = 0
@@ -6256,7 +6266,6 @@ YA = 84
 XB = 538
 YB = 414
 T = 5
-linestyle = 0
 hide = False
 lock = False
 layer = 0
@@ -6278,7 +6287,6 @@ YA = 85
 XB = 262
 YB = 413
 T = 5
-linestyle = 0
 hide = False
 lock = False
 layer = 0
@@ -6311,8 +6319,8 @@ class = 'MultiBitmap'
 [ATTRIBUTES]
 name = u'Button'
 body_language = 'ST'
-x = 678
-y = 98
+x = 674
+y = 200
 width = 122
 height = 88
 hide = False
@@ -6339,8 +6347,8 @@ class = 'SimpleText'
 [ATTRIBUTES]
 name = u'Text_1'
 body_language = 'C'
-x = 689
-y = 116
+x = 685
+y = 218
 width = 100
 height = 56
 hide = False
@@ -6375,7 +6383,6 @@ YA = 195
 XB = 670
 YB = 195
 T = 5
-linestyle = 0
 hide = False
 lock = False
 layer = 0
@@ -6397,7 +6404,6 @@ YA = 309
 XB = 669
 YB = 309
 T = 5
-linestyle = 0
 hide = False
 lock = False
 layer = 0
@@ -7084,6 +7090,27 @@ editable = False
 </childs fullname="/project/Tera_7/Screens/home/group_3">
 
 </node fullname="/project/Tera_7/Screens/home/group_3">
+
+<node fullname="/project/Tera_7/Screens/home/circle">
+
+[GENERAL]
+bigfile = 1
+module = 'model.indicatorModel.simpleCircle'
+class = 'SimpleCircle'
+[ATTRIBUTES]
+name = 'circle'
+body_language = 'C'
+X = 734
+Y = 142
+radius = 41
+thick = 5
+hide = False
+lock = False
+layer = 0
+border (repr) = 'ColorOnly((128, 128, 128),)'
+fill (repr) = 'ColorOnly((255, 159, 255),)'
+
+</node fullname="/project/Tera_7/Screens/home/circle">
 
 </childs fullname="/project/Tera_7/Screens/home">
 
@@ -8871,7 +8898,6 @@ saturation = 128
 rotate = 0
 aspectratio = False
 capture_mode = False
-ip_camera = False
 
 </node fullname="/project/Tera_7/Screens/camera/camera">
 
@@ -8941,7 +8967,6 @@ saturation = 128
 rotate = 0
 aspectratio = False
 capture_mode = False
-ip_camera = False
 
 </node fullname="/project/Tera_7/Screens/camera_2/camera">
 
