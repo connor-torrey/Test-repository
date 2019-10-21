@@ -1967,7 +1967,7 @@ winscope_offset = u''
 winscope_access_read = u''
 winscope_access_write = u''
 [VAR_17]
-name = u'testVar'
+name = u'testVar2'
 vartype = u'UINT'
 address = u'%M+'
 alias = False
@@ -3455,7 +3455,8 @@ count = 0
     doBrightness__call();
     usbUpdate__call();
     outputs__call();
-    testVar = 1;
+    testVar2 = 1;
+    //testVar = 1;
     if (parametersCode != 1234) // --> BE SURE THAT THIS CODE IS EQUAL TO parametersCode INIT VALUE!!!
     {
         INIT_BYTEARRAY_P__call();
@@ -7100,17 +7101,39 @@ class = 'SimpleCircle'
 [ATTRIBUTES]
 name = 'circle'
 body_language = 'C'
-X = 734
-Y = 142
-radius = 41
+X = 710
+Y = 122
+radius = 33
 thick = 5
 hide = False
 lock = False
 layer = 0
 border (repr) = 'ColorOnly((128, 128, 128),)'
-fill (repr) = 'ColorOnly((255, 159, 255),)'
+fill (repr) = 'ColorOnly((255, 223, 0),)'
 
 </node fullname="/project/Tera_7/Screens/home/circle">
+
+<node fullname="/project/Tera_7/Screens/home/simple_rect_2">
+
+[GENERAL]
+bigfile = 1
+module = 'model.indicatorModel.simpleRect'
+class = 'SimpleRect'
+[ATTRIBUTES]
+name = 'simple_rect_2'
+body_language = 'C'
+x = 682
+y = 168
+width = 100
+height = 20
+thick = 5
+hide = False
+lock = False
+layer = 0
+border (repr) = 'ColorOnly((128, 128, 128),)'
+fill (repr) = 'ColorOnly((0, 127, 255),)'
+
+</node fullname="/project/Tera_7/Screens/home/simple_rect_2">
 
 </childs fullname="/project/Tera_7/Screens/home">
 
